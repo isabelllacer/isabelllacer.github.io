@@ -154,7 +154,7 @@ $(document).ready(function(){
 		});
 
 		$(".overlay").click(function() {
-				$(".eyeshadow").addClass("cone-hover");
+				$(".cone").addClass("cone-hover");
 				$(".cone").removeClass("cone-active");
 				$(".overlay").removeClass("overlay-active");
 				$("body").removeClass("stop-scroll");

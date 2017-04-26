@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	var x = document.getElementsByTagName("BODY")[0];
 	$(".home-isabel").addClass("home-isabelt");
 	$(".home-llacer").addClass("home-llacert");
 
@@ -115,6 +116,74 @@ $(document).ready(function(){
 	});
 	$(".navbar-contact").click(function() {
 		$(window).scrollTop(4356);
+	});
+
+	$(".eyeshadow").click(function(event) {
+		$(".eyeshadow").removeClass("eyeshadow-hover");
+		$(".eyeshadow").addClass("eyeshadow-active");
+		$(window).scrollTop(1586);
+		$('html, body').css('overflowY', 'hidden'); 
+
+		event.stopPropagation();
+		$(".overlay").addClass("overlay-active");
+
+		$(".eyeshadow").click(function(event) {
+			event.stopPropagation();
+		});
+
+		$(".overlay").click(function() {
+				$(".eyeshadow").removeClass("eyeshadow-active");
+				$(".overlay").removeClass("overlay-active");
+				$("body").removeClass("stop-scroll");
+				$('html, body').css('overflowY', 'visible');
+				$(".eyeshadow").addClass("eyeshadow-hover"); 
+		});
+	});
+
+	$(".cone").click(function(event) {
+		$(".cone").removeClass("cone-hover");
+		$(".cone").addClass("cone-active");
+		$(window).scrollTop(1586);
+		$('html, body').css('overflowY', 'hidden'); 
+
+		event.stopPropagation();
+		$(".overlay").addClass("overlay-active");
+
+		$(".cone").click(function(event) {
+			event.stopPropagation();
+		});
+
+		$(".overlay").click(function() {
+				$(".eyeshadow").addClass("cone-hover");
+				$(".cone").removeClass("cone-active");
+				$(".overlay").removeClass("overlay-active");
+				$("body").removeClass("stop-scroll");
+				$('html, body').css('overflowY', 'visible'); 
+		});
+	});
+
+	$(".deer").click(function(event) {
+		$(".deer").removeClass("deer-hover");
+		$(".deer").addClass("deer-active");
+		$(window).scrollTop(1956);
+		$('html, body').css('overflowY', 'hidden'); 
+		$(".x-overlay2").addClass("x-overlay2-active");
+
+		event.stopPropagation();
+		$(".overlay").addClass("overlay-active");
+
+		$(".deer").click(function(event) {
+			event.stopPropagation();
+		});
+
+		$(".overlay").click(function() {
+				$(".deer").addClass("deer-hover");
+				$(".deer").removeClass("deer-active");
+				$(".x-overlay2").removeClass("x-overlay2-active");
+				$(".overlay").removeClass("overlay-active");
+				$("body").removeClass("stop-scroll");
+				$('html, body').css('overflowY', 'visible'); 
+		});
 	});
 
 

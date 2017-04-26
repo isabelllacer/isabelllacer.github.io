@@ -6,6 +6,7 @@ html, body {
 .body {
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 .text1 {
@@ -377,6 +378,58 @@ html, body {
     position: relative;
 }
 
+.overlay {
+  position: absolute;
+  z-index: 300;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0;
+  display: none;
+  -webkit-transition: opacity 0.7s; /* Safari */
+  -moz-transition: opacity 0.7s;
+  transition: opacity 0.7s;
+  transition-timing-function: ease-out;
+}
+
+.x-overlay1 {
+  position: relative;
+  /*
+  height: 30px;
+  width: 30px;
+  */
+  height: 20px;
+  width: 20px;
+  top: 315px;
+  left: 23%;
+}
+
+.x-overlay2 {
+  position: relative;
+  /*
+  height: 30px;
+  width: 30px;
+  */
+  height: 20px;
+  width: 20px;
+  top: 680px;
+  left: 23%;
+  opacity: 0;
+}
+
+.x-overlay2-active {
+  opacity: 1;
+}
+
+
+.x-overlay2:hover {
+  cursor: pointer;
+}
+
+.x-overlay1:hover {
+  cursor: pointer;
+}
+
 .work-line {
     height: 100%;
     width: 1px;
@@ -407,6 +460,23 @@ html, body {
 margin-top: 50px;
 }
 
+.git-link {
+  font-weight: normal;
+  color: #E8E8E8;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+
+}
+
+.git-link:hover {
+  color: #FB9E91;
+}
+
+.git-link:visited {
+  color: #696969;
+}
+
 .imgs-container {
 }
 
@@ -416,12 +486,26 @@ margin-top: 50px;
     margin-top: 20px;
     margin-bottom: 50px;
 }
+
+.deer-hover:hover {
+    cursor: pointer;
+}
+
+.eyeshadow-hover:hover {
+    cursor: pointer;
+}
+
+.cone-hover:hover {
+    cursor: pointer;
+}
+
 .eyeshadow {
     height: 300px;
     margin-right: 40px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
+
 .cone {
     height: 300px;
     margin-left: 40px;
@@ -599,4 +683,34 @@ margin-top: 50px;
 
 .navbar-fixed {
   position: fixed;
+}
+
+.eyeshadow-active {
+  height: 600px;
+  position: absolute;
+  left: 10%;
+  z-index: 301;
+}
+
+.cone-active {
+  height: 600px;
+  position: absolute;
+  left: 10%;
+  z-index: 301;
+}
+
+.deer-active {
+  height: 600px;
+  position: absolute;
+  left: 10%;
+  z-index: 301;
+}
+
+.overlay-active {
+  opacity: 0.8;
+  display: inherit;
+}
+
+.stop-scroll {
+  overflow: hidden;
 }

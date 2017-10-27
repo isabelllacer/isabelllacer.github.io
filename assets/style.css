@@ -452,21 +452,20 @@ html, body {
 margin-top: 50px;
 }
 
-.git-link {
+.git-link:link {
   font-weight: normal;
   color: #E8E8E8;
   font-size: 30px;
   letter-spacing: 1.5px;
-  text-decoration: none;
 
-}
-
-.git-link:hover {
-  color: #FB9E91;
 }
 
 .git-link:visited {
   color: #696969;
+}
+
+.git-link:hover {
+  color: #FB9E91;
 }
 
 .imgs-container {
@@ -614,6 +613,18 @@ margin-top: 50px;
     margin-left: 40px;
     margin-top: 15px;
     margin-right: -50px;
+}
+
+.email-link:link {
+  color: black;
+}
+
+.email-link:hover {
+  color: #E8E8E8;
+}
+
+.email-link:visited {
+  color: #696969;
 }
 
 .contact-content1 {

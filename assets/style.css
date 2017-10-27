@@ -358,8 +358,9 @@ html, body {
     left: 15%;
     margin-left: 140px;
     top: 160px;
-    right: 150px;
+    right: 10%;
     font-size: 23px;
+    font-size: 2vw;
     letter-spacing: 1.5px;
 }
 
